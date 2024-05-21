@@ -1,0 +1,9 @@
+<input type="number" #num> 
+<button (click)="setCount(num.value)">Set value</button><br>
+<br>
+
+<button (click)="increaseCount()">Increment Value</button><br>
+<button (click)="decreaseCount()">Decrement Count</button><br>
+<button (click)="showSignal()"> Show set count</button><br>
+
+Current Count is : {{counter}}

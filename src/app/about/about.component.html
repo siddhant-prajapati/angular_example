@@ -1,0 +1,12 @@
+
+<h1>About Page</h1>
+<p>about works!</p>
+<input type="text"  #txt> <br>
+<button (click)="setData(txt)">the button</button>
+
+<!-- Shorthand syntax: -->
+<p class="data-view" *select="let data from source">The data is: {{data}}</p>
+<!-- Long-form syntax: -->
+<ng-template select let-data [selectFrom]="source">
+  <p class="data-view">The data is: {{data}}</p>
+</ng-template>
